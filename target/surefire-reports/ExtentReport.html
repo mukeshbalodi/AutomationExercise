@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 9, 2025 07:57:31 AM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 9, 2025 11:21:01 AM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -72,17 +77,23 @@
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
 </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Firefox</a><a class="dropdown-item" href="#">chrome</a><a class="dropdown-item" href="#">edge</a>
+</ul>
+</li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag=""
+          tag="chrome"
           device="">
           <div class="test-detail">
-            <p class="name">Test: searchProduct</p>
+            <p class="name">Test: searchProduct [chrome]</p>
             <p class="text-sm">
-              <span>7:57:35 AM</span> / <span>00:00:38:229</span>
+              <span>11:21:04 AM</span> / <span>00:00:27:787</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,15 +101,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Test: searchProduct</h5>
-<span class='badge badge-success'>08.09.2025 7:57:35 AM</span>
-<span class='badge badge-danger'>08.09.2025 7:58:13 AM</span>
-<span class='badge badge-default'>00:00:38:229</span>
+<h5 class="test-status text-pass">Test: searchProduct [chrome]</h5>
+<span class='badge badge-success'>08.09.2025 11:21:04 AM</span>
+<span class='badge badge-danger'>08.09.2025 11:21:32 AM</span>
+<span class='badge badge-default'>00:00:27:787</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">chrome</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -106,51 +118,37 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:35 AM</td>
-        <td>
-          Starting Test: searchProduct
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:05 AM</td>
+        <td>11:21:30 AM</td>
         <td>
           Clicked on Products element
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:09 AM</td>
+        <td>11:21:30 AM</td>
         <td>
           word Jeans is entered into the Product Search Field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:12 AM</td>
+        <td>11:21:32 AM</td>
         <td>
           Click on Search Button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:58:13 AM</td>
+        <td>11:21:32 AM</td>
         <td>
           Element displayed : Soft Stretch Jeans
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:58:13 AM</td>
+        <td>11:21:32 AM</td>
         <td>
           Test Passed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:13 AM</td>
-        <td>
-          Test execution complete.
         </td>
       </tr>
   </tbody>
@@ -160,12 +158,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="2"
           author=""
-          tag=""
+          tag="edge"
           device="">
           <div class="test-detail">
-            <p class="name">Test: searchProduct</p>
+            <p class="name">Test: searchProduct [edge]</p>
             <p class="text-sm">
-              <span>7:57:35 AM</span> / <span>00:00:30:051</span>
+              <span>11:21:04 AM</span> / <span>00:00:06:348</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -173,15 +171,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Test: searchProduct</h5>
-<span class='badge badge-success'>08.09.2025 7:57:35 AM</span>
-<span class='badge badge-danger'>08.09.2025 7:58:05 AM</span>
-<span class='badge badge-default'>00:00:30:051</span>
+<h5 class="test-status text-pass">Test: searchProduct [edge]</h5>
+<span class='badge badge-success'>08.09.2025 11:21:04 AM</span>
+<span class='badge badge-danger'>08.09.2025 11:21:11 AM</span>
+<span class='badge badge-default'>00:00:06:348</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">edge</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -189,51 +188,37 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:35 AM</td>
-        <td>
-          Starting Test: searchProduct
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:58 AM</td>
+        <td>11:21:09 AM</td>
         <td>
           Clicked on Products element
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:59 AM</td>
+        <td>11:21:09 AM</td>
         <td>
           word Jeans is entered into the Product Search Field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:05 AM</td>
+        <td>11:21:11 AM</td>
         <td>
           Click on Search Button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:58:05 AM</td>
+        <td>11:21:11 AM</td>
         <td>
           Element displayed : Soft Stretch Jeans
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:58:05 AM</td>
+        <td>11:21:11 AM</td>
         <td>
           Test Passed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:05 AM</td>
-        <td>
-          Test execution complete.
         </td>
       </tr>
   </tbody>
@@ -243,12 +228,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="3"
           author=""
-          tag=""
+          tag="Firefox"
           device="">
           <div class="test-detail">
-            <p class="name">Test: searchProduct</p>
+            <p class="name">Test: searchProduct [Firefox]</p>
             <p class="text-sm">
-              <span>7:57:40 AM</span> / <span>00:00:13:431</span>
+              <span>11:21:06 AM</span> / <span>00:00:20:654</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -256,15 +241,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Test: searchProduct</h5>
-<span class='badge badge-success'>08.09.2025 7:57:40 AM</span>
-<span class='badge badge-danger'>08.09.2025 7:57:53 AM</span>
-<span class='badge badge-default'>00:00:13:431</span>
+<h5 class="test-status text-pass">Test: searchProduct [Firefox]</h5>
+<span class='badge badge-success'>08.09.2025 11:21:06 AM</span>
+<span class='badge badge-danger'>08.09.2025 11:21:27 AM</span>
+<span class='badge badge-default'>00:00:20:654</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Firefox</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -272,51 +258,37 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:40 AM</td>
-        <td>
-          Starting Test: searchProduct
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:48 AM</td>
+        <td>11:21:23 AM</td>
         <td>
           Clicked on Products element
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:48 AM</td>
+        <td>11:21:23 AM</td>
         <td>
           word Jeans is entered into the Product Search Field
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:53 AM</td>
+        <td>11:21:27 AM</td>
         <td>
           Click on Search Button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:57:53 AM</td>
+        <td>11:21:27 AM</td>
         <td>
           Element displayed : Soft Stretch Jeans
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:57:53 AM</td>
+        <td>11:21:27 AM</td>
         <td>
           Test Passed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:53 AM</td>
-        <td>
-          Test execution complete.
         </td>
       </tr>
   </tbody>
@@ -324,14 +296,84 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
+        <li class="test-item"  status="pass" test-id="4"
           author=""
-          tag=""
+          tag="edge"
           device="">
           <div class="test-detail">
-            <p class="name">Test: verifyCart</p>
+            <p class="name">Test: verifyCart [edge]</p>
             <p class="text-sm">
-              <span>7:57:53 AM</span> / <span>00:00:01:555</span>
+              <span>11:21:11 AM</span> / <span>00:00:09:131</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test: verifyCart [edge]</h5>
+<span class='badge badge-success'>08.09.2025 11:21:11 AM</span>
+<span class='badge badge-danger'>08.09.2025 11:21:20 AM</span>
+<span class='badge badge-default'>00:00:09:131</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">edge</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:11 AM</td>
+        <td>
+          Clicked on Add To Cart Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:12 AM</td>
+        <td>
+          Clicked on Continue Shopping Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:20 AM</td>
+        <td>
+          Clicked on Cart Icon
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:21:20 AM</td>
+        <td>
+          Product Name and Price verified: Soft Stretch Jeans Rs. 799
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:21:20 AM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag="Firefox"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test: verifyCart [Firefox]</p>
+            <p class="text-sm">
+              <span>11:21:27 AM</span> / <span>00:00:01:046</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -339,15 +381,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Test: verifyCart</h5>
-<span class='badge badge-success'>08.09.2025 7:57:53 AM</span>
-<span class='badge badge-danger'>08.09.2025 7:57:55 AM</span>
-<span class='badge badge-default'>00:00:01:555</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<h5 class="test-status text-fail">Test: verifyCart [Firefox]</h5>
+<span class='badge badge-success'>08.09.2025 11:21:27 AM</span>
+<span class='badge badge-danger'>08.09.2025 11:21:28 AM</span>
+<span class='badge badge-default'>00:00:01:046</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Firefox</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -355,124 +398,27 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:53 AM</td>
-        <td>
-          Starting Test: verifyCart
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:53 AM</td>
+        <td>11:21:27 AM</td>
         <td>
           Clicked on Add To Cart Button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:57:55 AM</td>
+        <td>11:21:28 AM</td>
         <td>
           Test Failed: org.openqa.selenium.ElementNotInteractableException: Element <button class="btn btn-success close-modal btn-block"> could not be scrolled into view
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [06e08a66-8bc4-41a6-84a9-4abbe92881ae, clickElement {id=83c0d299-aeba-4d58-97c2-97bd8afd529e}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8216, moz:profile: C:\Users\mukes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (06e08a66-8bc4-41a6-84a9-4abbe92881ae)] -> xpath: //button[@class='btn btn-success close-modal btn-block']]
-Session ID: 06e08a66-8bc4-41a6-84a9-4abbe92881ae
+Command: [f37b9b3a-62e9-465a-9d0b-f4005460393b, clickElement {id=5e5a1c00-84e0-49fd-9ebc-04d0cd96da10}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.2, moz:accessibilityChecks: false, moz:buildID: 20250804082849, moz:geckodriverVersion: 0.36.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 13968, moz:profile: C:\Users\mukes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (f37b9b3a-62e9-465a-9d0b-f4005460393b)] -> xpath: //button[@class='btn btn-success close-modal btn-block']]
+Session ID: f37b9b3a-62e9-465a-9d0b-f4005460393b
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='screenshots/verifyCart.png' src="screenshots/verifyCart.png">
+<img data-featherlight='C:\Users\mukes\eclipse-workspace\e-com/target/surefire-reports/screenshots/verifyCart.png' src="C:\Users\mukes\eclipse-workspace\e-com/target/surefire-reports/screenshots/verifyCart.png">
     
     </div></div>
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:57:55 AM</td>
-        <td>
-          Test execution complete.
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="5"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Test: verifyCart</p>
-            <p class="text-sm">
-              <span>7:58:05 AM</span> / <span>00:00:05:085</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Test: verifyCart</h5>
-<span class='badge badge-success'>08.09.2025 7:58:05 AM</span>
-<span class='badge badge-danger'>08.09.2025 7:58:10 AM</span>
-<span class='badge badge-default'>00:00:05:085</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:05 AM</td>
-        <td>
-          Starting Test: verifyCart
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:06 AM</td>
-        <td>
-          Clicked on Add To Cart Button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:06 AM</td>
-        <td>
-          Clicked on Continue Shopping Button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:09 AM</td>
-        <td>
-          Clicked on Cart Icon
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:58:10 AM</td>
-        <td>
-          Product Name and Price verified: Soft Stretch Jeans Rs. 799
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:58:10 AM</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:10 AM</td>
-        <td>
-          Test execution complete.
         </td>
       </tr>
   </tbody>
@@ -482,12 +428,12 @@ Session ID: 06e08a66-8bc4-41a6-84a9-4abbe92881ae
         </li>
         <li class="test-item"  status="pass" test-id="6"
           author=""
-          tag=""
+          tag="chrome"
           device="">
           <div class="test-detail">
-            <p class="name">Test: verifyCart</p>
+            <p class="name">Test: verifyCart [chrome]</p>
             <p class="text-sm">
-              <span>7:58:13 AM</span> / <span>00:00:02:975</span>
+              <span>11:21:32 AM</span> / <span>00:00:02:245</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -495,15 +441,16 @@ Session ID: 06e08a66-8bc4-41a6-84a9-4abbe92881ae
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Test: verifyCart</h5>
-<span class='badge badge-success'>08.09.2025 7:58:13 AM</span>
-<span class='badge badge-danger'>08.09.2025 7:58:16 AM</span>
-<span class='badge badge-default'>00:00:02:975</span>
+<h5 class="test-status text-pass">Test: verifyCart [chrome]</h5>
+<span class='badge badge-success'>08.09.2025 11:21:32 AM</span>
+<span class='badge badge-danger'>08.09.2025 11:21:34 AM</span>
+<span class='badge badge-default'>00:00:02:245</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">chrome</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -511,51 +458,37 @@ Session ID: 06e08a66-8bc4-41a6-84a9-4abbe92881ae
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:13 AM</td>
-        <td>
-          Starting Test: verifyCart
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:13 AM</td>
+        <td>11:21:32 AM</td>
         <td>
           Clicked on Add To Cart Button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:14 AM</td>
+        <td>11:21:33 AM</td>
         <td>
           Clicked on Continue Shopping Button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:16 AM</td>
+        <td>11:21:34 AM</td>
         <td>
           Clicked on Cart Icon
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:58:16 AM</td>
+        <td>11:21:34 AM</td>
         <td>
           Product Name and Price verified: Soft Stretch Jeans Rs. 799
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:58:16 AM</td>
+        <td>11:21:34 AM</td>
         <td>
           Test Passed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:58:16 AM</td>
-        <td>
-          Test execution complete.
         </td>
       </tr>
   </tbody>
@@ -572,18 +505,156 @@ Session ID: 06e08a66-8bc4-41a6-84a9-4abbe92881ae
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">Firefox</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Firefox</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:21:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Test: searchProduct [Firefox]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:21:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Test: verifyCart [Firefox]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">chrome</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>chrome</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:21:04 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Test: searchProduct [chrome]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:21:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>Test: verifyCart [chrome]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">edge</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>edge</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:21:04 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Test: searchProduct [edge]</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:21:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Test: verifyCart [edge]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 9, 2025 07:57:31 AM</h3>
+<h3>Aug 9, 2025 11:21:01 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 9, 2025 07:58:16 AM</h3>
+<h3>Aug 9, 2025 11:21:35 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -634,10 +705,10 @@ Session ID: 06e08a66-8bc4-41a6-84a9-4abbe92881ae
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='25%'><b>10</b> events passed</small></div>
+<div><small data-tooltip='37%'><b>10</b> events passed</small></div>
 <div>
-<small data-tooltip='2%'><b>1</b> events failed,
-<b data-tooltip='%'>28</b> others
+<small data-tooltip='3%'><b>1</b> events failed,
+<b data-tooltip='%'>16</b> others
 </small>
 </div>
 </div>
@@ -653,10 +724,43 @@ Session ID: 06e08a66-8bc4-41a6-84a9-4abbe92881ae
 </div></div>
 <script>
 var timeline = {
-"Test: searchProduct":38.229,"Test: searchProduct":30.051,"Test: searchProduct":13.431,"Test: verifyCart":1.555,"Test: verifyCart":5.085,"Test: verifyCart":2.975
+"Test: searchProduct [chrome]":27.787,"Test: searchProduct [edge]":6.348,"Test: searchProduct [Firefox]":20.654,"Test: verifyCart [edge]":9.131,"Test: verifyCart [Firefox]":1.046,"Test: verifyCart [chrome]":2.245
 };
 </script>
 <div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>Firefox</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>chrome</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>edge</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 </div>
 </div>
 <script>
@@ -683,7 +787,7 @@ passEvents: 10,
 failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 28
+infoEvents: 16
 };
 </script>        </div>
       </div>

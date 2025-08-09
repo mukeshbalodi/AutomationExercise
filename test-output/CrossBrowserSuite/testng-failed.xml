@@ -8,12 +8,12 @@
     <classes>
       <class name="org.AutomationExercise.e_com.TestCases.sanity">
         <methods>
+          <include name="startTest"/>
           <include name="generateReport"/>
-          <include name="logResult"/>
+          <include name="afterMethod"/>
           <include name="teardownClass"/>
           <include name="setupClass"/>
           <include name="setupReport"/>
-          <include name="setupTest"/>
           <include name="verifyCart"/>
           <include name="searchProduct"/>
         </methods>

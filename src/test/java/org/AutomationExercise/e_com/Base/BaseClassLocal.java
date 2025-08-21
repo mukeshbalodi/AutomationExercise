@@ -101,23 +101,34 @@ public class BaseClassLocal {
     }
 
     @AfterMethod(alwaysRun = true)
-    public void afterMethod(ITestResult result) {
+    public void logResult(ITestResult result) throws IOException {
         ExtentTest extentTest = test.get();
+        WebDriver localDriver = driver.get();
 
         if (extentTest != null) {
             if (result.getStatus() == ITestResult.FAILURE) {
-                String screenshotPath = takeScreenshot(result.getName());
+                String screenshotPath = takeScreenshotUtil.takeScreenshot(result.getName());
+                String relativePath = "screenshots/" + result.getName() + ".png";
+
                 if (screenshotPath != null) {
-                    extentTest.fail("Test Failed: " + result.getThrowable(),
-                            MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+                    extentTest.fail("Test Failed: " + result.getThrowable());
+
+                    // Embed thumbnail image with link to full-size screenshot
+                    String thumbnailHtml = "<a href='" + relativePath + "' target='_blank'>" +
+                            "<img src='" + relativePath + "' style='height:100px; width:auto; border:1px solid #ccc;'/></a>";
+     extentTest.info("Screenshot (click to enlarge): " + thumbnailHtml);
+
                 } else {
                     extentTest.fail("Test Failed: " + result.getThrowable());
                 }
+
             } else if (result.getStatus() == ITestResult.SUCCESS) {
                 extentTest.pass("Test Passed");
             } else if (result.getStatus() == ITestResult.SKIP) {
                 extentTest.skip("Test Skipped");
             }
+
+            extentTest.log(Status.INFO, "Test execution complete.");
         }
 
         test.remove();
